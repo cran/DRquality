@@ -1,0 +1,28 @@
+exportPattern("ClassificationError")
+exportPattern("Cmeasure")
+exportPattern("GabrielClassificationError")
+exportPattern("KendallsTau")
+exportPattern("plotMeasureRAAR")
+exportPattern("plotMeasureTundD")
+exportPattern("ProjectedPoints2Grid")
+exportPattern("RAAR")
+exportPattern("SpearmanError")
+exportPattern("SpearmansRho")
+exportPattern("TopologicalCorrelation")
+exportPattern("ZrehenMeasure4All")
+
+importFrom("graphics", "matplot", "plot", "symbols", "title", "points", "par", "plot.new", "axis", "box")
+importFrom("stats", "cmdscale", "cov", "dist", "lsfit", "prcomp", 
+           "rnorm", "runif", "sd", "cor")
+importFrom("utils", "combn")
+#importFrom("Distances", "knneighborDistances")
+
+importFrom("DatabionicSwarm", "Delaunay4Points","UniquePoints","ProjectedPoints2Grid")
+
+#importFrom('spdep','gabrielneigh')
+#importFrom('FastKNN','k.nearest.neighbors')
+#importFrom('pcaPP','cor.fk')
+#importFrom('fastICA','fastICA')
+#importFrom('MASS','sammon')
+#importFrom('tsne','tsne')
+#importFrom('vegan','isomap')

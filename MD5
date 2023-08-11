@@ -1,0 +1,16 @@
+ad77e74d0c90d30a1a9cb7ed19067e63 *DESCRIPTION
+84aa8e09efbb88536f3c38f86a26c9c8 *NAMESPACE
+4b6933c4ee5c3aeb7c9ef5ed9b6eb682 *R/ClassificationError.R
+9a75c611490152fdab3d0b1e103835e5 *R/Cmeasure.R
+39422746e38ca9af63e754fc2d29eb91 *R/GabrielClassificationError.R
+c6ac566e222d6cfe1ab14e0bcabac8cf *R/KendallsTau.R
+92d68bbeba46b94f5906b5a20882696f *R/SpearmanError.R
+ba9506e0c3a0025b21eab57692d63d2d *R/TopologicalCorrelation.R
+986402a0764a641b3c0b01d91ca6b109 *R/ZrehenMeasure4All.R
+e434998fbbecc0bc3d3bbf3caa92df56 *man/ClassificationError.Rd
+306f993646105b78992d44399d4040ae *man/Cmeasure.Rd
+fffe71b233843bd4567be71250707282 *man/GabrielClassificationError.Rd
+e56a2648cae59305882a603cf5f13846 *man/KendallsTau.Rd
+caa208ea56a75b47d673e448464a311d *man/SpearmanError.Rd
+835a7889a4ada39e89df99480ddb88d1 *man/TopologicalCorrelation.Rd
+cffd7ff943f96d4294cd332dff8483db *man/ZrehenMeasure4All.Rd
