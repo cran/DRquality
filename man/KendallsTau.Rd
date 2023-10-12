@@ -11,12 +11,8 @@ pcaPP::cor.fk.
 KendallsTau(InputDists, OutputDists)
 }
 \arguments{
-  \item{InputDists}{
-Matrix containing the distances of the first dataset.
-}
-  \item{OutputDists}{
-Matrix containing the distances of the second dataset.
-}
+\item{InputDists}{Matrix containing the distances of the first dataset.}
+\item{OutputDists}{Matrix containing the distances of the second dataset.}
 }
 \value{
 Equivalent to \code{\link[pcaPP]{cor.fk}}
@@ -24,10 +20,7 @@ Equivalent to \code{\link[pcaPP]{cor.fk}}
 \author{
 Michael Thrun
 }
-
-
 \examples{
-
 \donttest{
 if(requireNamespace("FCPS")){
 data(Hepta,package="FCPS")

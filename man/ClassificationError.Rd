@@ -8,15 +8,10 @@ Compares projected points to a given prior classification using knn classifier.
 ClassificationError(OutputDistances,Cls,k=5)
 }
 \arguments{
-  \item{OutputDistances}{
-[1:n,1:n]
-}
-  \item{Cls}{
-[1:n]
-}
-  \item{k}{
-number of k nearest neighbors, in Venna 2010 set to 5 (here default)
-}
+\item{OutputDistances}{[1:n,1:n] numeric matrix with distance matrix of
+projected data.}
+\item{Cls}{[1:n] Numeric vector containing class information.}
+\item{k}{number of k nearest neighbors, in Venna 2010 set to 5 (here default)}
 }
 \details{
 Projected points are evaluated by k-nearest neighbor classification accuracy (with k = 5), that is, each sample in the
@@ -24,11 +19,10 @@ visualization is classified by majority vote of its k nearest neighbors in the v
 classification is compared to the ground truth label. [Venna 2010].
 }
 \value{
-
+List with three entries:
 \item{Error}{Classification Error: 1-Accuracy[1]}
 \item{Accuracy}{Accuracy }
 \item{KNNCls}{[1:n]] cls of knn classifier}
-
 }
 \references{
 Venna, J., Peltonen, J., Nybo, K., Aidos, H., and Kaski, S. Information retrieval perspective to nonlinear dimensionality reduction for data visualization. The Journal of Machine Learning Research, 11, 451-490.  (2010)
@@ -41,13 +35,7 @@ Michael Thrun
 \note{
 Here, the Outputdistances of the Projected points are used.
 }
-
-\keyword{Classification Error}% use one of  RShowDoc("KEYWORDS")
-\keyword{ClassificationError}% __ONLY ONE__ keyword per line
-\keyword{ClassificationErrorRate}% __ONLY ONE__ keyword per line
-
 \examples{
-
 \donttest{
 if(requireNamespace("FCPS")){
 data(Hepta,package="FCPS")
@@ -63,3 +51,6 @@ projection=cmdscale(dist(Data), k=2)
 ClassificationError(as.matrix(dist(projection)),Cls)
 }
 }
+\keyword{Classification Error}% use one of  RShowDoc("KEYWORDS")
+\keyword{ClassificationError}% __ONLY ONE__ keyword per line
+\keyword{ClassificationErrorRate}% __ONLY ONE__ keyword per line

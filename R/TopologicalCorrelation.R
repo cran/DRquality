@@ -58,10 +58,12 @@ TopologicalCorrelation <- function(Data,ProjectedPoints,type='norm',method,Kn=0)
 	DelaunayGraphMatrix=function (X, Y, PlotIt = FALSE) 
 	{
 	  Unique = UniquePoints(cbind(X, Y))
-	  UniqXY = Unique$Unique
-	  UniqueInd = Unique$UniqueInd
-	  Uniq2DataInd = Unique$Uniq2DatapointsInd
-	  IsDuplicate = Unique$IsDuplicate
+	  UniqXY           = Unique$Unique
+	  UniqueInd        = Unique$UniqueInd
+      Uniq2DataInd     = Unique$Uniq2DatapointsInd
+      Uniq2DataInd2    = Unique$NewUniq2DataIdx
+      IsDuplicate      = Unique$IsDuplicate
+	
 	  UniqX = UniqXY[, 1]
 	  UniqY = UniqXY[, 2]
 	  DeldirOutput = deldir::deldir(UniqX, UniqY)

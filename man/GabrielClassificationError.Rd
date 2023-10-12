@@ -35,27 +35,27 @@ pch,lwd,Margin=list(t=50,r=0,l=0,b=0))
 \item{Margin}{Optional, Margin of plotly plot}
 }
 \details{
-Gabriek classification error (GCE) makes an unbiased evaluation of distance and
-densitiybased structure which ma be even non-linear seperable. First, GCE
+Gabriel Classification Error (GCE) makes an unbiased evaluation of distance- and
+density-based structures which might be even non-linear separable. First, GCE
 utilizes the information provided by a prior classification to assess projected
 structures. Second, GCE applies the insights drawn from graph theory. Details
-are described in [Thrun et al, 2023] }
+are described in [Thrun et al, 2023].}
 \value{
-list of 
-\item{GCE}{GabrielClassificationError 
-                            NOTE the rest is just for development purposes}
+list of several entries containing first the GCE itself as main result followed
+by further entries which contain potential important information
+\item{GCE}{Numeric: the 'Gabriel Classification Error'}
 \item{GCEperPoint}{[1:n] unnormalized GCE of each point: GCE =
 mean(GCEperPoint)}
 \item{nn}{the number of points in a relevant neghborhood:
 0.5 * 85percentile(AnzNN)}
-\item{AnzNN}{[1:n] the number of points with a gabriel graph neighborhood}
-\item{NNdists}{[1:n,1:nn] the distances within the relevant neighborhood, 0 for
-inner cluster distances}
+\item{AnzNN}{[1:n] the number of points with a Gabriel graph neighborhood}
+\item{NNdists}{[1:n,1:nn] the distances within the relevant neighborhood, 1 for
+inter cluster distances and 0 for inner cluster distances}
 \item{HD}{[1:nn] HD = HarmonicDecay(nn) i.e weight function for the NNdists:
 GCEperPoint = HD*NNdists}
-\item{IsInterDistance}{Distances to the nn closest neighbors }
+\item{IsInterDistance}{Distances to the nn closest neighbors.}
 \item{GabrielDists}{Distance matrix implied by high dimensional distances and the underlying gabriel (Gabriel) graph }
-\item{ProjectionGraphError}{ Plotly object in case, plotly is chose}
+\item{ProjectionGraphError}{Plotly object in case, plotly is chosen.}
 }
 \references{
 [Thrun et al, 2023] Thrun, M.C, Märte, J., Stier, Q.: Analyzing Quality Measurements for Dimensionality Reduction, Machine Learning and Knowledge Extraction (MAKE), Vol 5., accepted, 2023.

@@ -1,16 +1,17 @@
 \name{ZrehenMeasure4All}
 \alias{ZrehenMeasure4All}
-\title{ A generalized version of the zrehen-measure which defines the neighbourhood by gabrielgraph and    is therefore not restricted to grid-based projections.}
-
+\title{ZrehenMeasure4All}
+\usage{ZrehenMeasure4All(Data, Projection, width, height, isToroid = FALSE,
+isGrid = TRUE, plotGabriel = FALSE)}
 \arguments{
 \item{Data}{[1:n,1:d] points in input room with d attributes}
 \item{Projection}{[1:n,1:2] projected points in output room, with index,x,y or index,line,column}
-\item{width}{only necessary if toroid}
-\item{height}{only necessary if toroid}
-\item{isToroid}{are the points toroid?}
-\item{isGrid}{is the grid a toroid?}
-
-\item{plotGabriel}{plot the generated GabrielGraph}
+\item{width}{Numeric: only necessary if toroid}
+\item{height}{Numeric: only necessary if toroid}
+\item{isToroid}{Boolean: are the points toroid?}
+\item{isGrid}{Boolean: is the grid a toroid?}
+\item{plotGabriel}{Boolean: plot the generated GabrielGraph (TRUE) or not
+(FALSE). Default: plotGabriel=FALSE.}
 }
 \value{List with
 \item{V$zrehen}{the raw zrehen measure}
@@ -18,7 +19,8 @@
 \item{v$neighbourcounter}{the number of possible neighbours by which the zrehen measure is normed}
 }
 \description{
- A generalized version of the zrehen-measure which defines the neighbourhood by gabrielgraph and    is therefore not restricted to grid-based projections.}
+A generalized version of the Zrehen-measure which defines the neighbourhood with
+a Gabriel Graph and is therefore not restricted to grid-based projections.}
 \author{Florian Lerch 07/2015}
 
 \examples{
